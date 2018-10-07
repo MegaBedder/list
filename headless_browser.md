@@ -41,3 +41,8 @@ They are particularly useful for testing web pages as they are able to render an
 * [Sahi](http://sahipro.com/sahi-open-source/) - a cross-browser automation/testing tool with the facility to record and playback scripts.
 * [TestCafe](https://github.com/DevExpress/testcafe) - A Node.js tool to automate end-to-end web testing. 
 
+
+
+* [Wikipedia Headless browser](https://en.wikipedia.org/wiki/Headless_browser)
+
+* [List of headless web browser](http://dhamaniasad.github.io/HeadlessBrowsers)
