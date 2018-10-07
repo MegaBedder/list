@@ -9,3 +9,6 @@
 * [Duktape](https://duktape.org/), an embeddable engine, with focus on portability and a compact footprint.
 * [JerryScript](https://github.com/jerryscript-project/jerryscript), is an ultra-lightweight JavaScript engine for the Internet of Things.
 * [Esper](https://github.com/codecombat/esper.js), a JavaScript self-interpreter with a focus on sandboxed execution and runtime introspection.
+
+### Links
+[A Guide to JavaScript Engines for Idiots](https://developer.telerik.com/featured/a-guide-to-javascript-engines-for-idiots/)
