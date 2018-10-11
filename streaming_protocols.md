@@ -17,5 +17,25 @@ Name | Info
 RTP (Real-time Transport Protocol) | is a network protocol for delivering audio and video over IP networks.
 RTSP (Real Time Streaming Protocol) | [RTSP 1.0](https://tools.ietf.org/html/rfc2326) and [RTSP 2.0](https://tools.ietf.org/html/rfc7826) in 2016.
 [RTMP](https://www.adobe.com/devnet/rtmp.html) (Real-Time Messaging Protocol), RTMPS (secure over TLS/SSL), RTMPT (tunneled over HTTP) | streaming protocol designed by Adobe for high-performance transmission of audio, video, and data.
-[WebRTC](https://webrtc.org) (Web Real-Time Communication) | provides applications with Real-Time Communications (RTC) capabilities via simple APIs for the web browsers
-[WebSocket](https://tools.ietf.org/html/rfc6455) (ws and wss) | communications protocol, providing full-duplex communication channels over a single TCP connection
+[WebRTC](https://webrtc.org) (Web Real-Time Communication) | Real-Time Communications (RTC) capabilities via simple APIs for the web browsers, that can be used by video-chat, voice-calling, and P2P-file-sharing Web apps.
+[WebSocket](https://tools.ietf.org/html/rfc6455) (ws and wss) | is a protocol that providing (full-duplex?) communication channels over a single (persistent?) TCP connection between server (web servers) and client (web browsers) so they can exchange data at any time. Through WebSocket, servers can pass data to a client without prior client request, allowing for dynamic content updates. Combined with the WebSocket API ([WSAPI](https://www.w3.org/TR/websockets/)), it provides an alternative to **[HTTP polling](https://tools.ietf.org/html/rfc6202)** (HTTP was not initially meant to be used for bidirectional communication) for two-way communication from a web page to a remote server. [Why use WebSockets?](https://www.fullstackpython.com/websockets.html)
+[HTTP/2](https://http2.github.io/faq/) | [Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP), [ WebSocket over HTTP/2.0](https://tools.ietf.org/html/draft-hirano-httpbis-websocket-over-http2-01), [Does HTTP/2 make websockets obsolete?](https://stackoverflow.com/questions/28582935/does-http-2-make-websockets-obsolete), [No WebSocket over HTTP/2](https://daniel.haxx.se/blog/2016/06/15/no-websockets-over-http2/), [Web Push](https://en.wikipedia.org/wiki/Push_technology#Webpush), [Journey from WebSockets to HTTP/2](https://building.lang.ai/our-journey-from-websockets-to-http-2-4d069c54effd)
+
+**Synchronous**
+1. At the same time, at the same frequency.
+2. (computing, of communication) Single-threaded; blocking; occurring in the same thread as other computations, thereby preventing those computations from resuming until the communication is complete.
+3. (at the same time or frequency): simultaneous, in phase, in synch, in step
+4. (single-threaded): blocking, modal, single-threaded
+
+> Synchronous requests block the execution of code which creates "freezing" on the screen and an unresponsive user experience.
+
+**Asynchronous**
+
+1. Not synchronous; occurring at different times. 
+2. (computing, of a request or a message) Allowing the client to continue during processing.
+3. (computing, communication) Having many actions occurring at a time, in any order, without waiting for each other.
+4. (computing) allowing the client to continue during processing of a request or a message.
+
+> Ajax is an asynchronous mechanism for requesting small bits of data over HTTP; the result is sent back when the response is complete, not immediately.
+
+> [Difference Between Synchronous and Asynchronous Messaging](https://peoplesofttutorial.com/difference-between-synchronous-and-asynchronous-messaging/)
