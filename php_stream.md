@@ -42,7 +42,7 @@ Swoole extension | Swoole\\* | X | X | Swoole is a high-performance networking f
 [cURL extension](http://php.net/manual/en/intro.curl.php) | curl_init() | curl_setopt(), curl_exec() | curl_close() | --
 [Swoole extension](http://php.net/manual/en/intro.swoole.php) | Swoole\Http\Client, Swoole\Http\Response | Swoole\Http\Request | Swoole\Http\Client::close | --
 -- | -- | -- | -- | sockets i/o vector
-[Dir](http://php.net/manual/en/book.dir.php) handle | opendir() | readdir(), rewinddir() | closedir() | stream (dir)
+Dir handle ([Directories](http://php.net/manual/en/book.dir.php)) | opendir() | readdir(), rewinddir() | closedir() | stream (dir)
 File handle ([Filesystem](http://php.net/manual/en/book.filesystem.php)) | fopen(), tmpfile() | **feof()**, fflush(), fgetc(), fgetcsv(), fgets(), fgetss(), **flock()**, fpassthru(), fputs(), fwrite(), fread(), **fseek(), ftell(), fstat(), ftruncate(), set_file_buffer(), rewind()** | fclose() | stream (file)
 Process handle ([Program Execution](http://php.net/manual/en/intro.exec.php)) | [popen()](http://php.net/manual/en/function.popen.php) | **feof()**, fflush(), fgetc(), fgetcsv(), fgets(), fgetss(), fpassthru(), fputs(), fwrite(), fread() | pclose() | stream (pipe)
 Socket handle ([Network](http://php.net/manual/en/intro.network.php)) | fsockopen(), pfsockopen() | fflush(), fgetc(), fgetcsv(), fgets(), fgetss(), fpassthru(), fputs(), fwrite(), fread() | fclose() | stream (socket)
