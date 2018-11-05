@@ -1,5 +1,4 @@
 <?php
-
 /*************************************************
  *
  * Snoopy - the PHP net client
@@ -7,6 +6,9 @@
  * Copyright (c): 1999-2014, all rights reserved
  * Version: 2.0.0
  * License: GNU Lesser General Public License v2.1
+ *
+ * You may contact the author of Snoopy by e-mail at:
+ * monte@ohrt.com
  *
  * The latest version of Snoopy can be obtained from:
  * http://snoopy.sourceforge.net/
