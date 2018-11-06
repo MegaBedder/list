@@ -33,6 +33,7 @@ PHP Stream Socket | (p)fsockopen| X | - | URL style socket transports
 PHP Stream Socket | stream_socket_* | X | X | URL style socket transports
 Socket extension |socket_* | X | X | Low-level interface to the socket communication functions based on the popular BSD sockets.
 cURL extension | curl_* | X | - | libcurl, that allows you to connect and communicate to many different types of servers with many different types of protocols.
+pecl/http | http\\* | X | - | Extended HTTP support.
 Swoole extension | Swoole\\* | X | X | Swoole is a high-performance networking framework using an event-driven, asynchronous, non-blocking I/O model. It can be used to develop high-performance, scalable, concurrent TCP, UDP, Unix socket, HTTP, Websocket services.
 
 
@@ -40,6 +41,7 @@ Swoole extension | Swoole\\* | X | X | Swoole is a high-performance networking f
 -- | -- | -- | -- | --
 [Socket extension](http://php.net/manual/en/intro.sockets.php) | socket_create() | socket_accept(), socket_bind(), socket_connect(), socket_listen(), socket_read(), socket_write() | socket_close() | --
 [cURL extension](http://php.net/manual/en/intro.curl.php) | curl_init() | curl_setopt(), curl_exec() | curl_close() | --
+[pecl/http](https://github.com/m6w6/ext-http) | http\Client::__construct() | http\Client\Request() | -- | --
 [Swoole extension](http://php.net/manual/en/intro.swoole.php) | Swoole\Http\Client, Swoole\Http\Response | Swoole\Http\Request | Swoole\Http\Client::close | --
 -- | -- | -- | -- | sockets i/o vector
 Dir handle ([Directories](http://php.net/manual/en/book.dir.php)) | opendir() | readdir(), rewinddir() | closedir() | stream (dir)
