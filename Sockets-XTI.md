@@ -4,7 +4,7 @@
 Sockets Headers:
 * <fcntl.h> - file control options
 * <net/if.h> - sockets local interfaces
-* <sys/socket.h> - Main (Berkeley) Sockets Header
+* <sys/socket.h> - Main Berkeley Sockets Header
 * <sys/stat.h> - data returned by the stat() function.
 * <sys/uio.h> - definitions for scatter/gather I/O
 * <sys/un.h> - definitions for UNIX-domain sockets
@@ -13,9 +13,9 @@ Sockets Headers:
 IP Address Resolution Headers:
 * <arpa/inet.h> - definitions for internet operations
 * <netdb.h> - definitions for network database operations
-* <netinet/in.h> - Internet Protocol family (for IPv4 and IPv6)
-  - Use of Sockets over Internet Protocols based on IPv4 and IPv6
+* <netinet/in.h> - Internet Protocol family
   - Defines Internet protocol and address family (part of Berkeley sockets)
+  - Use of Sockets over Internet Protocols based on IPv4 and IPv6
 * <netinet/tcp.h> - Definitions for the Internet Transmission Control Protocol
   - Additional TCP control options (part of Berkeley sockets)
 * <unistd.h> - standard symbolic constants and types
