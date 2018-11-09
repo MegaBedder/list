@@ -39,11 +39,11 @@ Swoole extension | Swoole\\* | X | X | Swoole is a high-performance networking f
 
 [Definition](http://php.net/manual/en/resource.php) | Created By | Used By | Destroyed By | [Resource Type](http://php.net/manual/en/function.get-resource-type.php)
 -- | -- | -- | -- | --
-[Socket extension](http://php.net/manual/en/intro.sockets.php) | socket_create() | socket_accept(), socket_bind(), socket_connect(), socket_listen(), socket_read(), socket_write() | socket_close() | --
-[cURL extension](http://php.net/manual/en/intro.curl.php) | curl_init() | curl_setopt(), curl_exec() | curl_close() | --
+[Socket extension](http://php.net/manual/en/intro.sockets.php) | socket_create() | socket_accept(), socket_bind(), socket_connect(), socket_listen(), socket_read(), socket_write() | socket_close() | Socket
+[cURL extension](http://php.net/manual/en/intro.curl.php) | curl_init() | curl_setopt(), curl_exec() | curl_close() | curl
 [pecl/http](https://github.com/m6w6/ext-http) | http\Client::__construct() | http\Client\Request() | -- | --
 [Swoole extension](http://php.net/manual/en/intro.swoole.php) | Swoole\Http\Client, Swoole\Http\Response | Swoole\Http\Request | Swoole\Http\Client::close | --
--- | -- | -- | -- | sockets i/o vector
+-- | -- | -- | -- | i/o vector
 Dir handle ([Directories](http://php.net/manual/en/book.dir.php)) | opendir() | readdir(), rewinddir() | closedir() | stream (dir)
 File handle ([Filesystem](http://php.net/manual/en/book.filesystem.php)) | fopen(), tmpfile() | **feof()**, fflush(), fgetc(), fgetcsv(), fgets(), fgetss(), **flock()**, fpassthru(), fputs(), fwrite(), fread(), **fseek(), ftell(), fstat(), ftruncate(), set_file_buffer(), rewind()** | fclose() | stream (file)
 Process handle ([Program Execution](http://php.net/manual/en/intro.exec.php)) | [popen()](http://php.net/manual/en/function.popen.php) | **feof()**, fflush(), fgetc(), fgetcsv(), fgets(), fgetss(), fpassthru(), fputs(), fwrite(), fread() | pclose() | stream (pipe)
