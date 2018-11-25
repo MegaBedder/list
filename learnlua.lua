@@ -117,7 +117,8 @@ f = function (x) return x * x end
 
 -- And so are these:
 local function g(x) return math.sin(x) end
-local g = function (x) return math.sin(x) end
+local g; g  = function (x) return math.sin(x) end
+-- the 'local g' decl makes g-self-references ok.
 
 -- Trig funcs work in radians, by the way.
 
@@ -365,11 +366,11 @@ local a = require('mod2')  -- Prints Hi!
 local b = require('mod2')  -- Doesn't print; a=b.
 
 -- dofile is like require without caching:
-dofile('mod2')  --> Hi!
-dofile('mod2')  --> Hi! (runs again, unlike require)
+dofile('mod2.lua')  --> Hi!
+dofile('mod2.lua')  --> Hi! (runs it again)
 
 -- loadfile loads a lua file but doesn't run it yet.
-f = loadfile('mod2')  -- Calling f() runs mod2.lua.
+f = loadfile('mod2.lua')  -- Call f() to run it.
 
 -- loadstring is loadfile for strings.
 g = loadstring('print(343)')  -- Returns a function.
@@ -384,7 +385,7 @@ g()  -- Prints out 343; nothing printed before now.
 --[[
 
 I was excited to learn Lua so I could make games
-with the LÃ¶ve 2D game engine. That's the why.
+with the Löve 2D game engine. That's the why.
 
 I started with BlackBulletIV's Lua for programmers.
 Next I read the official Programming in Lua book.
@@ -403,8 +404,12 @@ The main topics not covered are standard libraries:
 By the way, this entire file is valid Lua; save it
 as learn.lua and run it with "lua learn.lua" !
 
-This was first written for tylerneylon.com, and is
-also available as a github gist. Have fun with Lua!
+This was first written for tylerneylon.com. It's
+also available as a github gist. Tutorials for other
+languages, in the same style as this one, are here:
+
+http://learnxinyminutes.com/
+
+Have fun with Lua!
 
 --]]
-
