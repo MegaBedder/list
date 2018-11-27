@@ -18,7 +18,6 @@
 ### Compression and Archive
 - Bzip2
 - LZF
-- Phar
 - Rar — Rar Archiving
 - Zip
 - Zlib — Zlib Compression
@@ -101,7 +100,6 @@
 
 ### GUI Extensions
 - [libui](https://github.com/andlabs/libui)
-
 
 ### Network
 - URLs
