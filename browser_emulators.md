@@ -15,4 +15,3 @@ Simulates the behavior of a web browser, allowing you to make requests, click on
 ### Example:
 * [Goutte](https://github.com/FriendsOfPHP/Goutte) - is a screen scraping and web crawling library for PHP.
 * [Zombie.js](http://zombie.js.org/) – a simulated browser environment for Node.js. No browser required.
-* [ENVJS](https://github.com/thatcher/env-js) – a simulated browser environment written in JavaScript for the Rhino engine.
