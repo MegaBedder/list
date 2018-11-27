@@ -12,7 +12,7 @@ Name | scheme://
 >
 > Presenta un enfoque unificado para operaciones comunes para el manejo de archivos y sockets en PHP.
 >
-> Permite que su script acceda a archivos, sockets, URL (URL style socket transports y URL style wrappers), memoria (filters) y objetos definidos por el script ([streamwrapper](http://php.net/manual/en/class.streamwrapper.php) object, URL wrapper implemented as a PHP class).
+> Permite que su script acceda a archivos, sockets, URL (socket transports y wrappers), memoria (filters) y objetos definidos por el script ([streamwrapper](http://php.net/manual/en/class.streamwrapper.php) object, URL wrapper implemented as a PHP class).
 
 - **PHP Stream**: Representar fuentes de datos transmisibles (streamable data sources).
 - **PHP Stream Wrapper**: Proporcionar soporte para recuperar datos y metadatos de las URL, mediante un wrapper a la API Stream.
@@ -27,10 +27,10 @@ Name | scheme://
 
 Name | Functions | Client | Server | Note
 -- | -- | -- | -- | --
-PHP Stream FileSystem | fopen, file_get_contents | X | - | URL style wrappers
+PHP Stream FileSystem | fopen, file_get_contents | X | - | URL style wrappers (php, file, glob, data, [http](https://lxr.room11.org/xref/php-src%407.3/ext/standard/http_fopen_wrapper.c#109), [ftp](https://lxr.room11.org/xref/php-src%407.3/ext/standard/ftp_fopen_wrapper.c#413))
 PHP Stream FileSystem | SplFileObject::__construct(), SplFileInfo::openFile() | X | - | URL style wrappers, object oriented interface for a file.
-PHP Stream Socket | (p)fsockopen| X | - | URL style socket transports
-PHP Stream Socket | stream_socket_* | X | X | URL style socket transports
+PHP Stream Socket | [(p)fsockopen](https://lxr.room11.org/xref/php-src%407.3/ext/standard/fsock.c#php_fsockopen_stream) | X | - | URL style [socket transports](https://lxr.room11.org/xref/php-src%407.3/main/streams/transports.c#54)
+PHP Stream Socket | [stream_socket_](https://lxr.room11.org/xref/php-src%407.3/ext/standard/streamsfuncs.c#89)* | X | X | URL style [socket transports](https://lxr.room11.org/xref/php-src%407.3/main/streams/transports.c#54)
 Socket extension |socket_* | X | X | Low-level interface to the socket communication functions based on the popular BSD sockets.
 cURL extension | curl_* | X | - | libcurl, that allows you to connect and communicate to many different types of servers with many different types of protocols.
 pecl/http | http\\* | X | - | Extended HTTP support.
@@ -42,7 +42,7 @@ Swoole extension | Swoole\\* | X | X | Swoole is a high-performance networking f
 [Socket extension](http://php.net/manual/en/intro.sockets.php) | socket_create() | socket_accept(), socket_bind(), socket_connect(), socket_listen(), socket_read(), socket_write() | socket_close() | Socket
 [cURL extension](http://php.net/manual/en/intro.curl.php) | curl_init() | curl_setopt(), curl_exec() | curl_close() | curl
 [pecl/http](https://github.com/m6w6/ext-http) | http\Client::__construct() | http\Client\Request() | -- | --
-[Swoole extension](http://php.net/manual/en/intro.swoole.php) | Swoole\Http\Client, Swoole\Http\Response | Swoole\Http\Request | Swoole\Http\Client::close | --
+[Swoole extension](http://php.net/manual/en/intro.swoole.php) | Swoole\Http\Client | Swoole\Http\Request, Swoole\Http\Response | Swoole\Http\Client::close | --
 -- | -- | -- | -- | i/o vector
 Dir handle ([Directories](http://php.net/manual/en/book.dir.php)) | opendir() | readdir(), rewinddir() | closedir() | stream (dir)
 File handle ([Filesystem](http://php.net/manual/en/book.filesystem.php)) | fopen(), tmpfile() | **feof()**, fflush(), fgetc(), fgetcsv(), fgets(), fgetss(), **flock()**, fpassthru(), fputs(), fwrite(), fread(), **fseek(), ftell(), fstat(), ftruncate(), set_file_buffer(), rewind()** | fclose() | stream (file)
