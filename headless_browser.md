@@ -34,6 +34,7 @@ They are particularly useful for testing web pages as they are able to render an
 * [PhantomJS](http://phantomjs.org/) – a Scriptable Headless Browser using WebKit layout engine [development is suspended]
 * [SlimerJS](https://slimerjs.org/) – a scriptable browser using Mozilla's Gecko layout engine.
 * [TrifleJS](http://triflejs.org/) – a headless Internet Explorer scriptable browser using the Trident layout engine
+* [ENVJS](https://github.com/thatcher/env-js) – a simulated browser environment written in JavaScript for the Rhino engine.
 
 ### Testing
 * [CasperJS](http://casperjs.org/) - Navigation scripting & testing utility for PhantomJS and SlimerJS [no longer actively maintained]
