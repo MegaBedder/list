@@ -7,9 +7,3 @@ Name | Version | Dependencies | Description
 [lluv](https://luarocks.org/modules/moteus/lluv) | 0.1.9-1 (176 days ago) | lua >= 5.1, < 5.4, libuv >= 1.0.0 | Lua low-level binding to libuv
 [richardhundt/luv](https://github.com/richardhundt/luv) | -- | Lua, libuv | libuv bindings for Lua
 [pguillory/luajit-libuv](https://github.com/pguillory/luajit-libuv) | -- | LuaJIT, libuv | LuaJIT FFI binding for libuv
-
-Name | Dependencies | Description
--- | -- | --
-[luvit/luvit](https://github.com/luvit/luvit) | Lua 5.1, libuv | Lua + libUV + jIT = pure awesomesauce
-[Luver](https://github.com/squeek502/luver) | Lua 5.1, libuv | a luvit without lit.
-
