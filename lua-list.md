@@ -1,3 +1,54 @@
+Data formats / Serialization
+- CSV (Comma-Separated-Values)
+- JSON
+- YAML - encoder/decoder
+- [msgpack](https://github.com/kieselsteini/msgpack) - A MessagePack implementation for Lua 5.3 
+- [lua-MessagePack](https://github.com/catwell/lua-MessagePack) - a pure Lua (5.1 & 5.3) implementation (spec v5)
+- [lua-msgpack](https://github.com/kengonakajima/lua-msgpack) - msgpack implementation by pure Lua 5.1 works without LuajJIT and FFI.
+- [lua-msgpack-native](https://github.com/kengonakajima/lua-msgpack-native) - Faster implementation of MessagePack for Lua runtime (Lua-specific C implementation)
+- [lua-cmsgpack](https://github.com/antirez/lua-cmsgpack) - A self contained Lua MessagePack C implementation.
+- [luajit-msgpack-pure](https://github.com/catwell/luajit-msgpack-pure) - MessagePack for LuaJIT (using FFI, no bindings, V4 API)
+
+Databases
+- SQLite
+- MySQL / MariaDB
+- PostgreSQL
+
+Date and time
+- icu-date - LuaJIT FFI bindings to ICU date and time library
+
+Development support
+- benchmark
+- Debug - Tools to print call traces, insert watchpoints, inspect Lua objects
+- Functional programming primitives
+- logger
+- strict - Module to prohibit use of undeclared Lua variables
+- checks - Easy, terse, readable and fast check of the Lua functions + argument types
+- tap - Tools to write nice unit tests conforming to Test Anything Protocol
+- lrexlib - Regular expression library binding (PCRE flavour)
+- lua-term - Terminal manipulation module
+- LPeg - Parsing Expression Grammars library
+- argparse - Feature-rich command-line argument parser for Lua
+
+I18n
+- iconv - Convert data between character sets
+
+Miscellaneous
+- 
+
+Networking
+- HTTP
+- WebSocket
+- SMTP
+
+Operating systems/Interfaces
+- POSIX APIs
+- File I/O
+- OS Funtions
+- Socket I/O
+
+-----------------------------
+
 ### Affecting Lua's Behaviour
 - Data Structures
 - Classes/Objects
