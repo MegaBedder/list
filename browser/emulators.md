@@ -1,6 +1,5 @@
-
 # Web Browser emulators
-Simulates the behavior of a web browser, allowing you to make requests, click on links and submit forms programmatically.
+> Simulates the behavior of a web browser, allowing you to make requests, click on links and submit forms programmatically.
 * Pure HTTP browser emulators.
 * Send a real HTTP requests against an application and parse the response content.
 
