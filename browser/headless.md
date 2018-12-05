@@ -40,7 +40,8 @@
 * [CasperJS](http://casperjs.org/) - Navigation scripting & testing utility for PhantomJS and SlimerJS [no longer actively maintained]
 * [Selenium](https://github.com/SeleniumHQ/selenium): A browser automation testing framework and ecosystem. 
 * [Sahi](http://sahipro.com/sahi-open-source/) - a cross-browser automation/testing tool with the facility to record and playback scripts.
-* [TestCafe](https://github.com/DevExpress/testcafe) - A Node.js tool to automate end-to-end web testing. 
+* [TestCafe](https://github.com/DevExpress/testcafe) - A Node.js tool to automate end-to-end web testing.
+* [Karma](http://karma-runner.github.io) - Test your code on real browsers and real devices or on a headless PhantomJS instance.
 
 
 ### Links
