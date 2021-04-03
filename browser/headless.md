@@ -32,6 +32,9 @@
 ### Scriptable
 * [Navalia](https://github.com/joelgriffith/navalia) - Drive a headless browser with ease by using GraphQL
 * [PhantomJS](http://phantomjs.org/) – a Scriptable Headless Browser using WebKit layout engine [development is suspended]
+* [Puppeteer](https://pptr.dev/) - Headless Chrome Node.js API to control Chrome or Chromium over the [Chrome DevTools Protocol (CDP)](https://chromedevtools.github.io/devtools-protocol/).
+* [puppeteer-extra](https://github.com/berstend/puppeteer-extra) - a modular plugin framework for Puppeteer
+* [Playwright](https://playwright.dev/) - Node.js library to automate Chromium, Firefox and WebKit with a single API
 * [SlimerJS](https://slimerjs.org/) – a scriptable browser using Mozilla's Gecko layout engine.
 * [TrifleJS](http://triflejs.org/) – a headless Internet Explorer scriptable browser using the Trident layout engine
 * [ENVJS](https://github.com/thatcher/env-js) – a simulated browser environment written in JavaScript for the Rhino engine.
@@ -43,8 +46,12 @@
 * [TestCafe](https://github.com/DevExpress/testcafe) - A Node.js tool to automate end-to-end web testing.
 * [Karma](http://karma-runner.github.io) - Test your code on real browsers and real devices or on a headless PhantomJS instance.
 
+### Utils
+* [Headless recorder](https://github.com/checkly/headless-recorder) - a Chrome extension that records your browser interactions and generates a Puppeteer or Playwright script.
 
 ### Links
 * [Wikipedia Headless browser](https://en.wikipedia.org/wiki/Headless_browser)
-
 * [List of headless web browser](http://dhamaniasad.github.io/HeadlessBrowsers)
+* [Playwright vs. Puppeteer](https://github.com/berstend/puppeteer-extra/wiki/Playwright-vs-Puppeteer) - are modern browser automation libraries to control real browsers with code.
+* [Awesome Playwright](https://github.com/mxschmitt/awesome-playwright) - A curated list of awesome tools, utils and projects using Playwright
+* [Awesome Puppeteer](https://github.com/transitive-bullshit/awesome-puppeteer) - A curated list of awesome puppeteer resources for controlling headless Chrome (or Chromium) over the DevTools Protocol.
