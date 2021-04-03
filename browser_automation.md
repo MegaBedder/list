@@ -7,5 +7,9 @@
 ### [Headless Browser](browser/headless.md)
 > is a web browser without a graphical user interface.
 
-### [Browser Engines](browser/engines.md)
-### [JavaScript Engines](js_engines.md)
+## Links
+* [Bot detection 101: Categories of web bots](https://antoinevastel.com/crawler/2019/12/29/families-web-bots.html)
+
+### Engines
+## [Browser Engines](browser/engines.md)
+## [JavaScript Engines](js_engines.md)
