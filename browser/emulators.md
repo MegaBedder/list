@@ -14,3 +14,5 @@
 ### Example:
 * [Goutte](https://github.com/FriendsOfPHP/Goutte) - is a screen scraping and web crawling library for PHP.
 * [Zombie.js](http://zombie.js.org/) – a simulated browser environment for Node.js. No browser required.
+* [Scrapy](https://scrapy.org/) - a fast high-level web crawling & scraping framework for Python
+* [Portia](https://github.com/scrapinghub/portia) - Visual scraping for Scrapy
